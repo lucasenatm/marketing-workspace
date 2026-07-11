@@ -1,0 +1,23 @@
+{
+  "name": "lucasena-os",
+  "description": "Sistema de onboarding e organização de workspace para Claude Code. Configura o ambiente, mapeia processos do dia a dia e cria skills personalizadas pro seu negócio.",
+  "version": "1.0.0",
+  "author": {
+    "name": "lucasena",
+    "url": "https://github.com/lucasenatm"
+  },
+  "homepage": "https://github.com/lucasenatm/lucasena-os",
+  "repository": "https://github.com/lucasenatm/lucasena-os",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-plugin",
+    "claude-skill",
+    "onboarding",
+    "workspace",
+    "setup",
+    "productivity",
+    "skills",
+    "portuguese"
+  ]
+}

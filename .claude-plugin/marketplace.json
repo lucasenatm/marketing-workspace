@@ -1,0 +1,16 @@
+{
+  "name": "lucasena-os",
+  "owner": {
+    "name": "lucasenatm"
+  },
+  "metadata": {
+    "description": "Skills de setup, mapeamento de processos e sincronização com GitHub para Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "lucasena-os",
+      "source": "./",
+      "description": "Sistema completo de onboarding para Claude Code: configura o workspace, mapeia processos do dia a dia e cria skills personalizadas pro seu negócio."
+    }
+  ]
+}
