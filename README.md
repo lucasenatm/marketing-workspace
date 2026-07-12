@@ -7,8 +7,17 @@ Sistema de onboarding e organização de workspace para Claude Code.
 | Comando | O que faz |
 |---|---|
 | `/comecar` | Configura o workspace pro seu negócio — faz perguntas, gera contexto, estrutura pastas e recomenda MCPs |
+| `/iniciar` | Starter de sessão — carrega o contexto e mostra o foco atual. Usar no começo de cada dia |
 | `/mapear` | Entrevista sobre processos repetitivos e cria skills personalizadas pro seu dia a dia |
+| `/novo-projeto` | Cria pasta de projeto com CLAUDE.md dedicado. Ideal pra novo cliente ou lançamento |
+| `/atualizar` | Varre o projeto e sincroniza os arquivos de contexto com o estado real do workspace |
 | `/syncar` | Salva o workspace no GitHub (commit + push), com setup automático se for a primeira vez |
+
+## Também inclui
+
+- `templates/perfis/` — templates de CLAUDE.md pra freelancer, agência, solopreneur e empresa
+- `templates/ferramentas/catalogo.md` — referência de APIs, CLIs e MCPs disponíveis pra usar em skills
+- `templates/skills/catalogo.md` — skills externas prontas pra instalar
 
 ## Instalação
 
