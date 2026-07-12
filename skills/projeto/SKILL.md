@@ -1,9 +1,9 @@
 ---
-name: novo-projeto
+name: projeto
 description: >
   Cria uma nova pasta de projeto com CLAUDE.md personalizado. Entrevista o usuário
   sobre o projeto, gera a estrutura e referencia no CLAUDE.md principal.
-  Use quando o usuário chamar /novo-projeto, disser "novo cliente", "novo projeto",
+  Use quando o usuário chamar /projeto, disser "novo cliente", "novo projeto",
   "criar pasta pro cliente X", "vou começar um projeto novo", ou quando precisar
   organizar um trabalho novo em pasta separada.
 user-invokable: true
@@ -11,7 +11,7 @@ argument-hint: "<nome-do-projeto>"
 license: MIT
 ---
 
-# /novo-projeto — Criar Projeto com Contexto
+# /projeto — Criar Projeto com Contexto
 
 Cria uma pasta de projeto com CLAUDE.md dedicado, entrevistando o usuário sobre o que é o projeto.
 

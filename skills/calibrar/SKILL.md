@@ -23,7 +23,7 @@ Fazer uma varredura comparando o **estado real do projeto** com o que está **do
 Ler e anotar:
 
 1. **Estrutura de pastas** — listar os diretórios de primeiro nível (ignorar `.git`, `node_modules`, `.claude`, `templates`, `dados`)
-2. **Skills instaladas** — listar `.claude/skills/*/` e `.claude/commands/*.md` (exceto os padrão: configurar, iniciar, salvar, escanear, calibrar, novo-projeto)
+2. **Skills instaladas** — listar `.claude/skills/*/` e `.claude/commands/*.md` (exceto os padrão: configurar, iniciar, salvar, escanear, calibrar, projeto)
 3. **MCPs configurados** — verificar se `.claude.json` ou `.claude/mcp.json` existe e quais servers estão listados
 4. **Arquivos recentes** — usar `git diff --name-only HEAD~5..HEAD` pra ver o que mudou recentemente
 5. **Mudanças não commitadas** — `git status` pra ver trabalho em andamento

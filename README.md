@@ -16,7 +16,7 @@ Seis skills que cobrem o ciclo completo de um workspace organizado:
 
 **`/escanear`** — entrevista você sobre os processos repetitivos do dia a dia e cria skills personalizadas pra cada um. Quanto mais você usa, mais o sistema aprende o que você faz.
 
-**`/novo-projeto`** — cria uma pasta de projeto com CLAUDE.md dedicado. Útil quando entra cliente novo ou começa um lançamento. O Claude passa a ter contexto separado pra aquele projeto específico.
+**`/projeto`** — cria uma pasta de projeto com CLAUDE.md dedicado. Útil quando entra cliente novo ou começa um lançamento. O Claude passa a ter contexto separado pra aquele projeto específico.
 
 **`/calibrar`** — mantém os arquivos de contexto em dia. Varre o estado real do workspace e aponta o que ficou desatualizado: pastas novas, skills instaladas, MCPs adicionados. Útil depois de sessões longas.
 
