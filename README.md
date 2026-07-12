@@ -10,17 +10,17 @@ Feito por [lucasena.](https://lucasena.com)
 
 Seis skills que cobrem o ciclo completo de um workspace organizado:
 
-**`/comecar`** — configura tudo do zero. Faz perguntas sobre o negócio, detecta seu perfil (freelancer, agência, solopreneur, empresa), gera os arquivos de contexto, monta a estrutura de pastas e recomenda os MCPs certos pra você. Rode uma vez.
+**`/configurar`** — configura tudo do zero. Faz perguntas sobre o negócio, detecta seu perfil (freelancer, agência, solopreneur, empresa), gera os arquivos de contexto, monta a estrutura de pastas e recomenda os MCPs certos pra você. Rode uma vez.
 
 **`/iniciar`** — use no começo de cada sessão. Carrega o contexto do negócio, mostra o foco atual e os pendentes. Nada de repetir o que você faz toda vez que abre o Claude.
 
-**`/mapear`** — entrevista você sobre os processos repetitivos do dia a dia e cria skills personalizadas pra cada um. Quanto mais você usa, mais o sistema aprende o que você faz.
+**`/escanear`** — entrevista você sobre os processos repetitivos do dia a dia e cria skills personalizadas pra cada um. Quanto mais você usa, mais o sistema aprende o que você faz.
 
 **`/novo-projeto`** — cria uma pasta de projeto com CLAUDE.md dedicado. Útil quando entra cliente novo ou começa um lançamento. O Claude passa a ter contexto separado pra aquele projeto específico.
 
-**`/atualizar`** — mantém os arquivos de contexto em dia. Varre o estado real do workspace e aponta o que ficou desatualizado: pastas novas, skills instaladas, MCPs adicionados. Útil depois de sessões longas.
+**`/calibrar`** — mantém os arquivos de contexto em dia. Varre o estado real do workspace e aponta o que ficou desatualizado: pastas novas, skills instaladas, MCPs adicionados. Útil depois de sessões longas.
 
-**`/syncar`** — commit e push no GitHub. Configura o remote se for a primeira vez, detecta o que mudou e salva tudo com uma mensagem de commit automática.
+**`/salvar`** — commit e push no GitHub. Configura o remote se for a primeira vez, detecta o que mudou e salva tudo com uma mensagem de commit automática.
 
 ---
 
@@ -29,7 +29,7 @@ Seis skills que cobrem o ciclo completo de um workspace organizado:
 **Mais fácil:** cole esse prompt no Claude Code com qualquer pasta aberta.
 
 ```
-Instala pra mim o plugin https://github.com/lucasenatm/lucasena-os adicionando as entradas necessárias no ~/.claude/settings.json e rode /comecar
+Instala pra mim o plugin https://github.com/lucasenatm/lucasena-os adicionando as entradas necessárias no ~/.claude/settings.json e rode /configurar
 ```
 
 **Manual:** adicione ao `~/.claude/settings.json`:
@@ -48,7 +48,7 @@ Instala pra mim o plugin https://github.com/lucasenatm/lucasena-os adicionando a
 }
 ```
 
-Depois rode `/comecar`.
+Depois rode `/configurar`.
 
 ---
 

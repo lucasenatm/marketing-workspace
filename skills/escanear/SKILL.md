@@ -1,10 +1,10 @@
 ---
-name: mapear
+name: escanear
 description: >
   Entrevista o usuário sobre seus processos repetitivos e cria pastas e skills
-  personalizadas pro dia a dia dele. Rodar depois do /comecar.
-  Use quando o usuário chamar /mapear, quando disser "quero organizar meus processos",
-  "quero criar skills", "mapear tarefas", ou "personalizar o ambiente".
+  personalizadas pro dia a dia dele. Rodar depois do /configurar.
+  Use quando o usuário chamar /escanear, quando disser "quero organizar meus processos",
+  "quero criar skills", "escanear tarefas", ou "personalizar o ambiente".
 user-invokable: true
 argument-hint: ""
 license: MIT
@@ -14,7 +14,7 @@ license: MIT
 
 ## Contexto
 
-Essa skill é o segundo passo depois do `/comecar`. O /comecar configurou quem o usuário é. Agora vamos entender **o que ele faz no dia a dia** e criar a estrutura certa pra isso.
+Essa skill é o segundo passo depois do `/configurar`. O /configurar configurou quem o usuário é. Agora vamos entender **o que ele faz no dia a dia** e criar a estrutura certa pra isso.
 
 ## Antes de começar
 

@@ -1,10 +1,10 @@
 ---
-name: atualizar
+name: calibrar
 description: >
   Varre o estado atual do projeto e atualiza os arquivos de contexto que ficaram
   desatualizados. Compara o que existe nas pastas, skills e configurações com o que
   está documentado em CLAUDE.md, _contexto/ e marca/design-guide.md.
-  Use quando o usuário chamar /atualizar, quando disser "atualiza o contexto",
+  Use quando o usuário chamar /calibrar, quando disser "atualiza o contexto",
   "os arquivos tão desatualizados", "sincroniza a memória", ou no fim de uma sessão
   longa com muitas mudanças.
 user-invokable: true
@@ -23,7 +23,7 @@ Fazer uma varredura comparando o **estado real do projeto** com o que está **do
 Ler e anotar:
 
 1. **Estrutura de pastas** — listar os diretórios de primeiro nível (ignorar `.git`, `node_modules`, `.claude`, `templates`, `dados`)
-2. **Skills instaladas** — listar `.claude/skills/*/` e `.claude/commands/*.md` (exceto os padrão: comecar, iniciar, syncar, mapear, atualizar, novo-projeto)
+2. **Skills instaladas** — listar `.claude/skills/*/` e `.claude/commands/*.md` (exceto os padrão: configurar, iniciar, salvar, escanear, calibrar, novo-projeto)
 3. **MCPs configurados** — verificar se `.claude.json` ou `.claude/mcp.json` existe e quais servers estão listados
 4. **Arquivos recentes** — usar `git diff --name-only HEAD~5..HEAD` pra ver o que mudou recentemente
 5. **Mudanças não commitadas** — `git status` pra ver trabalho em andamento

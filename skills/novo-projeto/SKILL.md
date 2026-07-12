@@ -117,4 +117,4 @@ CLAUDE.md: [caminho/CLAUDE.md]
 - O CLAUDE.md do projeto deve ser curto no início — vai crescer com o uso
 - Nunca mover pastas existentes sem perguntar
 - Se o usuário já criou a pasta manualmente, só gerar o CLAUDE.md dentro dela
-- Respeitar a estrutura de pastas que o `/comecar` criou
+- Respeitar a estrutura de pastas que o `/configurar` criou

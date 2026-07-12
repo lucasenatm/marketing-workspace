@@ -1,9 +1,9 @@
 ---
-name: syncar
+name: salvar
 description: >
   Salva o estado atual do workspace no GitHub (commit + push).
   Use quando quiser garantir que o trabalho está seguro, ao final de uma sessão produtiva,
-  ou quando o usuário disser "salva no github", "faz commit", "synca", "syncar",
+  ou quando o usuário disser "salva no github", "faz commit", "salva", "salvar",
   "backup no github", "salva tudo", "manda pro github".
   Também configura o git pela primeira vez se ainda não estiver configurado.
 user-invokable: true

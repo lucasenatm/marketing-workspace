@@ -1,17 +1,17 @@
 ---
-name: comecar
+name: configurar
 description: >
   Configura o Claude Code pro seu negócio. Faz perguntas sobre quem você é,
   o que faz e como trabalha, e gera CLAUDE.md, contexto, estrutura de pastas e
   lista de MCPs personalizados pro seu perfil.
-  Use quando o usuário chamar /comecar, quando _contexto/empresa.md estiver vazio
+  Use quando o usuário chamar /configurar, quando _contexto/empresa.md estiver vazio
   ou ausente, ou quando disser "configurar o sistema", "primeira vez", "começar".
 user-invokable: true
 argument-hint: ""
 license: MIT
 ---
 
-# /comecar — Configuração do Sistema
+# /configurar — Configuração do Sistema
 
 ## Verificação inicial
 
@@ -222,7 +222,7 @@ Substitua o conteúdo placeholder pelo CLAUDE.md real do usuário:
 
 **Estrutura de pastas:**
 [lista das pastas criadas e o que vai em cada uma — gerada conforme o perfil detectado]
-- `templates/skills/` — templates de skills prontos pra personalizar com /mapear
+- `templates/skills/` — templates de skills prontos pra personalizar com /escanear
 - `templates/ferramentas/catalogo.md` — APIs e ferramentas disponíveis pra usar em skills
 
 ## Sobre o negócio
@@ -461,9 +461,9 @@ Após gerar todos os arquivos, envie uma mensagem de encerramento:
 >
 > 1. Se você tiver chaves de API, guarde sempre num arquivo `.env` — ele nunca vai pro GitHub por engano.
 >
-> 2. Para não perder seu trabalho, conecte esse workspace ao GitHub rodando `/syncar`. Leva 2 minutos.
+> 2. Para não perder seu trabalho, conecte esse workspace ao GitHub rodando `/salvar`. Leva 2 minutos.
 >
-> **Próximo passo:** rode `/mapear` pra eu entender seus processos do dia a dia e criar skills personalizadas pra você.
+> **Próximo passo:** rode `/escanear` pra eu entender seus processos do dia a dia e criar skills personalizadas pra você.
 >
 > —
 > *lucasena-os · by lucasena.*"
