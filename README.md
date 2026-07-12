@@ -12,6 +12,18 @@ Sistema de onboarding e organização de workspace para Claude Code.
 
 ## Instalação
 
+### Opção 1 — Via prompt (mais fácil)
+
+Com o Claude Code aberto em qualquer pasta, copie e cole esse prompt:
+
+```
+Instala pra mim o plugin https://github.com/lucasenatm/lucasena-os adicionando as entradas necessárias no ~/.claude/settings.json e rode /comecar
+```
+
+O Claude faz tudo: lê o repositório, configura o `settings.json` e inicia a configuração.
+
+### Opção 2 — Manual
+
 Adicione ao seu `settings.json` do Claude Code (`~/.claude/settings.json`):
 
 ```json
