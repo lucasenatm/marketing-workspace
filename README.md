@@ -1,68 +1,76 @@
 # lucasena-os
 
-Sistema de onboarding e organização de workspace para Claude Code.
+Plugin pra Claude Code que configura e organiza qualquer workspace em minutos. Faz perguntas sobre o seu negócio, gera os arquivos de contexto certos, cria a estrutura de pastas pro seu perfil e instala os MCPs que fazem sentido pra você.
 
-## Skills incluídas
+Feito por [lucasena.](https://lucasena.com)
 
-| Comando | O que faz |
-|---|---|
-| `/comecar` | Configura o workspace pro seu negócio — faz perguntas, gera contexto, estrutura pastas e recomenda MCPs |
-| `/iniciar` | Starter de sessão — carrega o contexto e mostra o foco atual. Usar no começo de cada dia |
-| `/mapear` | Entrevista sobre processos repetitivos e cria skills personalizadas pro seu dia a dia |
-| `/novo-projeto` | Cria pasta de projeto com CLAUDE.md dedicado. Ideal pra novo cliente ou lançamento |
-| `/atualizar` | Varre o projeto e sincroniza os arquivos de contexto com o estado real do workspace |
-| `/syncar` | Salva o workspace no GitHub (commit + push), com setup automático se for a primeira vez |
+---
 
-## Também inclui
+## O que você ganha
 
-- `templates/perfis/` — templates de CLAUDE.md pra freelancer, agência, solopreneur e empresa
-- `templates/ferramentas/catalogo.md` — referência de APIs, CLIs e MCPs disponíveis pra usar em skills
-- `templates/skills/catalogo.md` — skills externas prontas pra instalar
+Seis skills que cobrem o ciclo completo de um workspace organizado:
+
+**`/comecar`** — configura tudo do zero. Faz perguntas sobre o negócio, detecta seu perfil (freelancer, agência, solopreneur, empresa), gera os arquivos de contexto, monta a estrutura de pastas e recomenda os MCPs certos pra você. Rode uma vez.
+
+**`/iniciar`** — use no começo de cada sessão. Carrega o contexto do negócio, mostra o foco atual e os pendentes. Nada de repetir o que você faz toda vez que abre o Claude.
+
+**`/mapear`** — entrevista você sobre os processos repetitivos do dia a dia e cria skills personalizadas pra cada um. Quanto mais você usa, mais o sistema aprende o que você faz.
+
+**`/novo-projeto`** — cria uma pasta de projeto com CLAUDE.md dedicado. Útil quando entra cliente novo ou começa um lançamento. O Claude passa a ter contexto separado pra aquele projeto específico.
+
+**`/atualizar`** — mantém os arquivos de contexto em dia. Varre o estado real do workspace e aponta o que ficou desatualizado: pastas novas, skills instaladas, MCPs adicionados. Útil depois de sessões longas.
+
+**`/syncar`** — commit e push no GitHub. Configura o remote se for a primeira vez, detecta o que mudou e salva tudo com uma mensagem de commit automática.
+
+---
 
 ## Instalação
 
-### Opção 1 — Via prompt (mais fácil)
-
-Com o Claude Code aberto em qualquer pasta, copie e cole esse prompt:
+**Mais fácil:** cole esse prompt no Claude Code com qualquer pasta aberta.
 
 ```
 Instala pra mim o plugin https://github.com/lucasenatm/lucasena-os adicionando as entradas necessárias no ~/.claude/settings.json e rode /comecar
 ```
 
-O Claude faz tudo: lê o repositório, configura o `settings.json` e inicia a configuração.
-
-### Opção 2 — Manual
-
-Adicione ao seu `settings.json` do Claude Code (`~/.claude/settings.json`):
+**Manual:** adicione ao `~/.claude/settings.json`:
 
 ```json
-{
-  "enabledPlugins": {
-    "lucasena-os@lucasena-os": true
-  },
-  "extraKnownMarketplaces": {
-    "lucasena-os": {
-      "source": {
-        "source": "github",
-        "repo": "lucasenatm/lucasena-os"
-      }
+"enabledPlugins": {
+  "lucasena-os@lucasena-os": true
+},
+"extraKnownMarketplaces": {
+  "lucasena-os": {
+    "source": {
+      "source": "github",
+      "repo": "lucasenatm/lucasena-os"
     }
   }
 }
 ```
 
-Depois abra o Claude Code e rode:
+Depois rode `/comecar`.
+
+---
+
+## Estrutura do plugin
 
 ```
-/comecar
+skills/
+  comecar/       — onboarding e configuração inicial
+  iniciar/       — starter de sessão
+  mapear/        — criação de skills personalizadas
+  novo-projeto/  — criação de projeto com contexto
+  atualizar/     — manutenção de contexto
+  syncar/        — backup no GitHub
+
+templates/
+  perfis/        — templates de CLAUDE.md por perfil
+  ferramentas/   — catálogo de APIs, CLIs e MCPs disponíveis
+  skills/        — catálogo de skills externas prontas pra instalar
 ```
 
-## Como usar
+---
 
-1. `/comecar` — rode uma vez pra configurar o workspace
-2. `/mapear` — rode depois pra criar skills personalizadas pro que você mais faz
-3. `/syncar` — rode sempre que quiser salvar o trabalho no GitHub
+## Licença
 
-## by lucasena.
-
-[lucasena.com](https://lucasena.com)
+MIT
