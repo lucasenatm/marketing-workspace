@@ -426,7 +426,40 @@ curriculo/
 tarefas.md
 ```
 
-### 7. Recomendar MCPs e ferramentas
+### 7. Criar `.gitignore` básico
+
+Junto com a estrutura de pastas escolhida, criar (ou completar, se já existir) um `.gitignore` na raiz. A lógica é sempre a mesma: protege chave de API e dado bruto/sensível, mas mantém versionado o que é entrega finalizada e o histórico do que foi feito.
+
+**Base comum, sempre incluir:**
+
+```
+# Variáveis de ambiente (API keys, tokens — NUNCA commitar)
+.env
+.env.local
+.env.*
+
+# Arquivos de dados brutos (planilhas, exports, CSVs)
+dados/*.csv
+dados/*.xlsx
+dados/*.xls
+dados/*.pdf
+dados/*.json
+!dados/README.md
+
+# Sistema
+.DS_Store
+node_modules/
+```
+
+**Adição por perfil:**
+
+- **Agência / freelancer:** ignora `clientes/` inteiro, mas com exceção pra `site/`, `marca/` e `projetos/` de cada cliente (entrega publicada, identidade visual e diário do que foi feito ficam versionados; briefing, proposta e dado bruto de cliente ficam de fora). Também ignora `briefings/` e `propostas/` na raiz.
+- **Empresa (por setor):** ignora `financeiro/` e `rh/` (dado sensível/pessoal), mantém o resto.
+- **Solopreneur / criador / profissional:** só a base comum — o conteúdo produzido geralmente é o próprio ativo do negócio, faz sentido ficar versionado.
+
+Depois de criar, avisar na mensagem final (ver abaixo) o que ficou de fora e que é ajustável.
+
+### 8. Recomendar MCPs e ferramentas
 
 Ler `templates/ferramentas/catalogo.md` e cruzar com as ferramentas que o usuário citou na Pergunta 5.
 
@@ -457,11 +490,13 @@ Após gerar todos os arquivos, envie uma mensagem de encerramento:
 > - Estrutura de pastas pro seu perfil de [perfil detectado]
 > - [N] MCPs instalados / [N] anotados pra instalar depois
 >
-> **Duas coisas importantes antes de continuar:**
+> **Três coisas importantes antes de continuar:**
 >
 > 1. Se você tiver chaves de API, guarde sempre num arquivo `.env` — ele nunca vai pro GitHub por engano.
 >
-> 2. Para não perder seu trabalho, conecte esse workspace ao GitHub rodando `/salvar`. Leva 2 minutos.
+> 2. Nem tudo que você criar aqui vai pro GitHub quando salvar. Criei um `.gitignore` básico que deixa de fora [resumo do que ficou de fora pro perfil detectado] e mantém versionado [resumo do que entra]. Isso é só o padrão — se quiser que mais coisa fique salva no Git, é só pedir que eu ajusto.
+>
+> 3. Para não perder seu trabalho, conecte esse workspace ao GitHub rodando `/salvar`. Leva 2 minutos.
 >
 > **Próximo passo:** rode `/escanear` pra eu entender seus processos do dia a dia e criar skills personalizadas pra você.
 >

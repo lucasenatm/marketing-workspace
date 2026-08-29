@@ -49,7 +49,13 @@ git push -u origin main
 Confirme:
 
 > "Conectado. Seu workspace está agora em [link].
-> A partir de agora, rode /syncar sempre que quiser salvar o que fez."
+> A partir de agora, rode /salvar sempre que quiser salvar o que fez.
+>
+> Uma coisa importante: nem tudo vai pro GitHub. O `.gitignore` da raiz define o que fica de fora (normalmente dado bruto de cliente, briefings, propostas) e o que entra (entregas publicadas, identidade visual, diário de projeto). Se quiser ver exatamente o que está sendo ignorado, ou incluir mais coisa no backup, é só pedir."
+
+Se o `.gitignore` ainda não existir nesse ponto (workspace não passou pelo `/configurar`), avisar antes de conectar:
+
+> "Não achei um `.gitignore` configurado — sem ele, tudo que estiver na pasta vai pro repositório, incluindo qualquer chave de API solta ou dado sensível de cliente. Quer que eu crie um básico antes de conectar?"
 
 ---
 
@@ -98,3 +104,5 @@ Se o push falhar (credenciais, conexão, etc.), mostre o erro de forma simples:
 - Nunca commitar `.env`, `.env.local` ou qualquer arquivo com chaves secretas
 - Tom direto — não explica git em detalhes a não ser que o usuário pergunte
 - Se der erro, sempre mostrar o que fazer a seguir — nunca só mostrar o erro
+- Se o usuário perguntar "o que está indo pro backup" ou similar, ler o `.gitignore` da raiz e resumir em linguagem simples o que fica de fora e o que entra — nunca simplesmente colar o conteúdo bruto do arquivo
+- O `.gitignore` é só o padrão inicial. Se o usuário pedir pra incluir ou excluir algo do backup, editar o arquivo na hora e confirmar o que mudou
