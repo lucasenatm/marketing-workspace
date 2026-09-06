@@ -56,12 +56,12 @@ Depois rode `/configurar`.
 
 ```
 skills/
-  comecar/       — onboarding e configuração inicial
+  configurar/    — onboarding e configuração inicial
   iniciar/       — starter de sessão
-  mapear/        — criação de skills personalizadas
-  novo-projeto/  — criação de projeto com contexto
-  atualizar/     — manutenção de contexto
-  syncar/        — backup no GitHub
+  escanear/      — criação de skills personalizadas
+  projeto/       — criação de projeto com contexto
+  calibrar/      — manutenção de contexto
+  salvar/        — backup no GitHub
 
 templates/
   perfis/        — templates de CLAUDE.md por perfil
