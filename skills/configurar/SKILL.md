@@ -501,7 +501,7 @@ Após gerar todos os arquivos, envie uma mensagem de encerramento:
 > **Próximo passo:** rode `/escanear` pra eu entender seus processos do dia a dia e criar skills personalizadas pra você.
 >
 > —
-> *lucasena-os · by lucasena.*"
+> *marketing workspace · by lucasena.*"
 
 ---
 

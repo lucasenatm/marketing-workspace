@@ -1,6 +1,6 @@
-# lucasena-os
+# marketing workspace
 
-Plugin pra Claude Code que configura e organiza qualquer workspace em minutos. Faz perguntas sobre o seu negócio, gera os arquivos de contexto certos, cria a estrutura de pastas pro seu perfil e instala os MCPs que fazem sentido pra você.
+Plugin pra Claude Code que monta e organiza o seu workspace de marketing em minutos. Faz perguntas sobre o seu negócio, gera os arquivos de contexto certos, cria a estrutura de pastas pro seu perfil e instala os MCPs que fazem sentido pra você.
 
 Feito por [lucasena.](https://lucasena.com)
 
@@ -29,20 +29,20 @@ Seis skills que cobrem o ciclo completo de um workspace organizado:
 **Mais fácil:** cole esse prompt no Claude Code com qualquer pasta aberta.
 
 ```
-Instala pra mim o plugin https://github.com/lucasenatm/lucasena-os adicionando as entradas necessárias no ~/.claude/settings.json e rode /configurar
+Instala pra mim o plugin https://github.com/lucasenatm/marketing-workspace adicionando as entradas necessárias no ~/.claude/settings.json e rode /configurar
 ```
 
 **Manual:** adicione ao `~/.claude/settings.json`:
 
 ```json
 "enabledPlugins": {
-  "lucasena-os@lucasena-os": true
+  "marketing-workspace@marketing-workspace": true
 },
 "extraKnownMarketplaces": {
-  "lucasena-os": {
+  "marketing-workspace": {
     "source": {
       "source": "github",
-      "repo": "lucasenatm/lucasena-os"
+      "repo": "lucasenatm/marketing-workspace"
     }
   }
 }
