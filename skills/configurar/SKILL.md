@@ -140,14 +140,14 @@ Aguardar o usuário colar a resposta. Com o que vier:
 ---
 
 ### Pergunta 3
-"Me conta o que sai das suas mãos toda semana. Pode listar quantas coisas quiser."
+"Me conta quais são as suas entregas e demandas da semana. Pode listar quantas coisas quiser."
 
 *(Exemplos: conteúdo pra redes sociais, propostas comerciais, relatórios, código, e-mails pra clientes, apresentações, ou um pouco de tudo)*
 
 ### Pergunta 4
-"Esse trabalho é pra cliente de fora, pro seu próprio negócio, ou os dois ao mesmo tempo?"
+"Esse workspace é pra clientes de fora, pro seu próprio negócio, pro seu emprego atual, ou mais de uma dessas opções?"
 
-*(Responde livre, não precisa escolher uma caixinha)*
+*(Pode marcar mais de uma. Responde livre, não precisa escolher uma caixinha)*
 
 ### Pergunta 4.5 · foco atual
 
